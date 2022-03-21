@@ -1,2 +1,2 @@
 # riconv2
-The official source codes for the riconv++ paper
+The official source codes for the riconv++ paper, will release this week.
