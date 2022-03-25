@@ -46,6 +46,7 @@ cd ../../
 
 ## Usage
 ### Classification
+We perform classification on ModelNet40 and ScanObjectNN respectively.
 #### ModelNet40
 
 Download alignment **ModelNet** [here](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip) and save in `../data/modelnet40_normal_resampled/`. Follow the instructions of [PointNet++(Pytorch)](https://github.com/yanx27/Pointnet_Pointnet2_pytorch) to prepare the data. Specifically, please use `--process_data` to preprocess the data, and move the processed data to `../data/modelnet40_preprocessed/`. Alternatively, you can also download the pre-processd data [here](https://1drv.ms/u/s!AmHXm1tT3NIcnnBiRlVxATXtOhe9?e=oynmh2) and save it in `../data/modelnet40_preprocessed/`. (**Note**: the `data/` folder is outside the project folder)
@@ -54,7 +55,7 @@ To train a RIConv++ model to classify shapes in the ModelNet40 dataset:
 ```
 python3 train_classification_modelnet40.py
 ```
-For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_modelnet40/pretrained) directly:
+For testing, you can use your trained model by specifying `--log_dir` or use our **pretrained model** [4.9MB](log/classification_modelnet40/pretrained) directly:
 ```
 python3 test_classification_modelnet40.py
 ```
@@ -65,7 +66,7 @@ Training on the **OBJ_ONLY** variant:
 ```
 python3 train_classification_scanobj.py --data_type 'OBJ_NOBG'
 ```
-For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_NOBG) directly:
+For testing, you can use your trained model by specifying `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_NOBG) directly:
 ```
 python3 test_classification_scanobj.py --data_type 'OBJ_NOBG'
 ```
@@ -74,7 +75,7 @@ Training on the **OBJ_BG** variant:
 ```
 python3 train_classification_scanobj.py --data_type 'OBJ_BG'
 ```
-For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_BG) directly:
+For testing, you can use your trained model by specifying `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_BG) directly:
 ```
 python3 test_classification_scanobj.py --data_type 'OBJ_BG'
 ```
@@ -83,7 +84,7 @@ Training on the hardest variant **PB_T50_RS**:
 ```
 python3 train_classification_scanobj.py --data_type 'hardest'
 ```
-For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/hardest) directly:
+For testing, you can use your trained model by specifying `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/hardest) directly:
 ```
 python3 test_classification_scanobj.py --data_type 'hardest'
 ```
@@ -98,7 +99,7 @@ Training:
 ```
 python3 train_partseg.py
 ```
-For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [18.2MB](log/part_seg/pretrained) directly:
+For testing, you can use your trained model by specifying `--log_dir` or use our **pretrained model** [18.2MB](log/part_seg/pretrained) directly:
 ```
 python3 test_partseg.py
 ```
@@ -115,7 +116,7 @@ Training:
 ```
 python3 train_semseg.py
 ```
-For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [18.2MB](log/sem_seg/pretrained) directly:
+For testing, you can use your trained model by specifying `--log_dir` or use our **pretrained model** [18.2MB](log/sem_seg/pretrained) directly:
 ```
 python3 test_semseg.py
 ```
