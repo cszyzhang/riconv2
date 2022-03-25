@@ -54,36 +54,36 @@ To train a RIConv++ model to classify shapes in the ModelNet40 dataset:
 ```
 python3 train_classification_modelnet40.py
 ```
-To test the performance, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_modelnet40/pretrained) to test:
+For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_modelnet40/pretrained) directly:
 ```
 python3 test_classification_modelnet40.py
 ```
 #### ScanObjectNN
 Download the **ScanObjectNN** [here](https://hkust-vgd.github.io/scanobjectnn/) and save the `main_split` and `main_split_nobg` subfolders that inlcude the h5 files into the `../data/scanobjectnn/` (**Note**: the `data/` folder is outside the project folder)
 
-Training on the OBJ_ONLY variant:
+Training on the **OBJ_ONLY** variant:
 ```
 python3 train_classification_scanobj.py --data_type 'OBJ_NOBG'
 ```
-To test the performance, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_NOBG) to test:
+For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_NOBG) directly:
 ```
 python3 test_classification_scanobj.py --data_type 'OBJ_NOBG'
 ```
 
-Training on the OBJ_BG variant:
+Training on the **OBJ_BG** variant:
 ```
 python3 train_classification_scanobj.py --data_type 'OBJ_BG'
 ```
-To test the performance, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_BG) to test:
+For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/OBJ_BG) directly:
 ```
 python3 test_classification_scanobj.py --data_type 'OBJ_BG'
 ```
 
-Training on the hardest variant PB_T50_RS:
+Training on the hardest variant **PB_T50_RS**:
 ```
 python3 train_classification_scanobj.py --data_type 'hardest'
 ```
-To test the performance, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/hardest) to test:
+For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [4.9MB](log/classification_scanobj/pretrained/hardest) directly:
 ```
 python3 test_classification_scanobj.py --data_type 'hardest'
 ```
@@ -98,7 +98,7 @@ Training:
 ```
 python3 train_partseg.py
 ```
-To test the performance, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [18.2MB](log/part_seg/pretrained) to test:
+For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [18.2MB](log/part_seg/pretrained) directly:
 ```
 python3 test_partseg.py
 ```
@@ -115,7 +115,7 @@ Training:
 ```
 python3 train_semseg.py
 ```
-To test the performance, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [18.2MB](log/sem_seg/pretrained) to test:
+For testing, you can use your trained model by specifying the `--log_dir` or use our **pretrained model** [18.2MB](log/sem_seg/pretrained) directly:
 ```
 python3 test_semseg.py
 ```
