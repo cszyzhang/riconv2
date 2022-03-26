@@ -36,7 +36,7 @@ def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Model')
     parser.add_argument('--batch_size', type=int, default=4, help='batch size in testing [default: 32]')
-    parser.add_argument('--gpu', type=str, default='1', help='specify gpu device')
+    parser.add_argument('--gpu', type=str, default='0', help='specify gpu device')
     parser.add_argument('--num_point', type=int, default=4096, help='point number [default: 4096]')
     parser.add_argument('--log_dir', type=str, default='pretrained', help='experiment root')
     parser.add_argument('--visual', type=bool, default=False, help='visualize result [default: False]')
