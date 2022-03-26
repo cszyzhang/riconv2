@@ -41,7 +41,7 @@ def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('RIConv2')
     parser.add_argument('--batch_size', type=int, default=16, help='batch size in testing')
-    parser.add_argument('--gpu', type=str, default='1', help='specify gpu device')
+    parser.add_argument('--gpu', type=str, default='0', help='specify gpu device')
     parser.add_argument('--num_point', type=int, default=2048, help='point Number')
     parser.add_argument('--log_dir', type=str, default='pretrained', help='experiment root')
     parser.add_argument('--normal', type=bool, default=True, help='use normals')
