@@ -314,7 +314,7 @@ def sample_and_group(npoint, radius, nsample, xyz, norm):
     ri_feat, idx_ordered = RI_features(xyz, norm, new_xyz, new_norm, idx)
 
     
-    return new_xyz, ri_feat, new_norm.squeeze_(), idx_ordered
+    return new_xyz, ri_feat, new_norm, idx_ordered
     
 def sample_and_group_all(xyz, norm):
 
