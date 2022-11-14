@@ -233,7 +233,7 @@ def order_index(xyz, new_xyz, new_norm, idx):
     sign = torch.cross(projected_xyz_unit, vec_ref.view(B, S, 1, C).repeat(1, 1, nsample, 1))
     sign = torch.matmul(sign, new_norm)
     sign = torch.sign(sign)
-    sign[:, :, 0, 0] = 1.  # the first is the vec_ref itself, should be 1.
+    sign[:, :, 0, 0] = 1.  # the first is the center point itself, just set sign as 1 to differ from ref_vec 
     dots = sign*dots - (1-sign)
     dots_sorted, indices = torch.sort(dots, dim=2, descending=True)
     idx_ordered = idx.gather(2, indices.squeeze_(-1))
