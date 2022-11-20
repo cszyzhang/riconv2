@@ -8,13 +8,16 @@ International Journal of Computer Vision, 2022
 
 If you found this paper useful in your research, please cite:
 ```
+
 @article{zhang2022riconv2,
   title={RIConv++: Effective Rotation Invariant Convolutions for 3D Point Clouds Deep Learning},
   author={Zhang, Zhiyuan and Hua, Binh-Son and Yeung, Sai-Kit},
   journal={International Journal of Computer Vision},
-  volume={1},
-  pages={1--16},
-  year={2022}
+  volume={130},
+  number={5},
+  pages={1228--1243},
+  year={2022},
+  publisher={Springer}
 }
 
 @inproceedings{zhang2020global,
